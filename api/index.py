@@ -37,7 +37,7 @@ def calculate_halving_date(current_block_height, average_block_time):
             remaining_seconds = remaining_blocks * average_block_time
             return datetime.datetime.now() + datetime.timedelta(seconds=remaining_seconds)
 
-
+@app.route("/", methods=["GET"])
 @app.route("/btc-halving-date", methods=["GET"])
 def btc_halving_date():
     stats = get_blockchain_stats()
