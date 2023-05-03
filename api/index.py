@@ -49,6 +49,7 @@ def btc_halving_date():
 
 
 @app.route("/btc-halving-ical", methods=["GET"])
+@app.route("ical", methods=["GET"])
 def btc_halving_ical():
     stats = get_blockchain_stats()
     current_block_height = stats["blocks"]
