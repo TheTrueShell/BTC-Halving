@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, Response
 import datetime
 from icalendar import Calendar, Event
-from btc_halving_estimator import estimate_next_halving_date
+from api.btc_halving_estimator import estimate_next_halving_date
 
 app = Flask(__name__)
 
