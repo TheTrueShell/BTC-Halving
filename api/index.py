@@ -42,7 +42,7 @@ def btc_halving_ical():
 
     # Create an iCal calendar
     cal = Calendar()
-    cal.add("prodid", "-//Bitcoin Halving Calendar//example.com//")
+    cal.add("prodid", "-//Bitcoin Halving Calendar//btc.biotic.win//")
     cal.add("version", "2.0")
 
     # Calculate future halvings and add them to the calendar
