@@ -66,4 +66,4 @@ def btc_halving_ical():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
