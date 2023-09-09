@@ -87,13 +87,13 @@ def calculate_next_halving_date(current_block_height, current_block_time, avg_bl
 
 def estimate_next_halving_date():
     latest_block_data = get_latest_block_data()
-    
     if latest_block_data:
         average_block_time = get_average_block_time(latest_block_data['id'])
-        return calculate_next_halving_date(
+        next_halving_date = calculate_next_halving_date(
             latest_block_data['id'], latest_block_data['time'], average_block_time
         )
-    return None
+        return next_halving_date, latest_block_data['id']
+    return None, None
 
 
 if __name__ == "__main__":
