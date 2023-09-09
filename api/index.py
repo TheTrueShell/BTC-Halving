@@ -2,7 +2,7 @@ from flask import Flask, jsonify, Response
 import datetime
 import logging
 from icalendar import Calendar, Event
-from btc_halving_estimator import estimate_next_halving_date, get_average_block_time
+from api.btc_halving_estimator import estimate_next_halving_date, get_average_block_time
 
 BTC_HALVING_INTERVAL = 210000
 
